@@ -1,0 +1,71 @@
+
+/* main and general styles */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    background-color: #fff;
+    color: #252526;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+/* reusable components */
+
+.row{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* header */
+
+
+header{
+    background-image:linear-gradient(hsl(0, 0%, 68%),hsla(0, 0%, 68%, 0.192) ), url(img/header-cover.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+
+
+.logo{
+    float: left;
+    margin-top: 20px;
+    height: 70px;
+    width: auto;
+}
+
+.main-nav{
+    float: right;
+    list-style: none;
+    padding: 30px;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.main-nav li a:link, .main-nav li a:visited {
+    color: #252526;
+    font-weight: 600;
+    padding-bottom: 7px;
+    transition: border-bottom .2s, color .2s;
+}
+
+.main-nav li a:hover , .main-nav li a:active {
+   border-bottom: 2px solid #2DEEEE;
+   color: #2DEEEE;
+}
+
