@@ -23,8 +23,31 @@ html, body{
     margin: 0 auto;
 }
 
+p{
+    font-size: 82%;
+    text-align: justify;
+    padding: 0 25px;
+    margin-top: 34px;
+}
+
+section{
+    padding: 100px 0;
+}
+
+/* links */
 a{
     text-decoration: none;
+}
+
+/* headings */
+
+h1{
+    font-weight: 700;
+    font-size: 450%;
+    margin: 0 15px; 
+}
+h2{
+    line-height: 150%;
 }
 
 /* header */
@@ -69,3 +92,96 @@ header{
    color: #2DEEEE;
 }
 
+/* section hi */
+
+.section-hi{
+    margin-top: 10%;
+}
+
+.section-hi h1{
+    text-align: right;
+    padding: 0 25px;
+}
+
+.section-hi h1::after{
+    content: "!";
+    color: #2DEEEE;
+    font-size: 150%;
+}
+.section-hi p{
+    margin-top: 34px;
+}
+
+
+/* section skills */
+
+.section-skills{
+    background-color: rgb(238, 237, 237);
+}
+
+.section-skills h1{
+    padding : 0 25px;
+}
+
+.section-skills h1::after{
+    content: "Skills";
+    display: block;
+    margin: 10px 80px 0;
+    color: #2DEEEE;
+    font-size: 150%;
+}
+
+/* section Projects */
+
+.section-work{
+    background-color: #5E5E5E; 
+}
+
+.box-highlight{
+    width: 60%;
+    height: auto;
+    margin: 0 20%;
+}
+
+.box-highlight img{
+    width: 100%;
+    border-bottom: 2.5px solid #2DEEEE;
+    transform: scale(1);
+    transition: transform .2s, box-shadow .2s;
+}
+
+.box-highlight img:hover{
+    width: 100%;
+    border-bottom: 2.5px solid #2DEEEE;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 40px 1px rgba(0,0,0,0.75);
+
+}
+.box-highlight p{
+    padding: 0;
+    margin : 6px 0;
+    color: #ECF0F1;
+}
+
+.section-work h1{
+    padding : 0 25px;
+    color: #2DEEEE;
+}
+
+.section-work h1::after{
+    content: "Work";
+    display: block;
+    margin: 10px 80px 0;
+    color: rgb(238, 237, 237);
+    font-size: 150%;
+}
+
+.section-work h3{
+    font-size:100%; 
+    font-weight: 600;
+    color: #ECF0F1;
+    margin-bottom: 10px;
+}
+.section-work h2{
+    color: #ECF0F1;
+}
