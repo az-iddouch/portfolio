@@ -19,7 +19,7 @@ html, body{
 /* reusable components */
 
 .row{
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
@@ -42,6 +42,7 @@ a{
 /* headings */
 
 h1{
+    color: #5E5E5E;
     font-weight: 700;
     font-size: 450%;
     margin: 0 15px; 
@@ -163,7 +164,57 @@ header{
     color: #ECF0F1;
 }
 
+.box-highlight a:link, .box-highlight a:visited {
+    color: #2DEEEE;
+    font-weight: 600;
+    transition: color .2s;
+}
+.box-highlight a:active, .box-highlight a:hover {
+    color: #ECF0F1
+}
+
+.projects{
+    margin-top: 80px;
+}
+
+.box {
+    font-size: 95%;
+    width: 90%;
+    margin: 0 5%;
+}
+
+.box img{
+    width: 100%;
+    height: auto;
+}
+
+.box h2{
+    font-size: 135%;
+}
+.box h2::after{
+    content: '';
+    display: block;
+    width : 80px;
+    height: 2px;
+    background-color: #2DEEEE;
+    margin-top: 8px; 
+}
+
+.box p{
+    padding: 0;
+    margin : 12px 0;
+    color: #ECF0F1;
+}
+.box a:link, .box a:visited {
+    color: #2DEEEE;
+    font-weight: 600;
+    transition: color .2s;
+}
+.box a:active, .box a:hover {
+    color: #ECF0F1
+}
 .section-work h1{
+    margin-top: 30px;
     padding : 0 25px;
     color: #2DEEEE;
 }
@@ -184,4 +235,108 @@ header{
 }
 .section-work h2{
     color: #ECF0F1;
+}
+
+/* reach out section */
+
+.reach-out-section{
+    background-color: #ECF0F1;
+}
+
+.reach-out-section h1{
+    padding : 0 25px;
+}
+
+.reach-out-section h1::after{
+    content: "Out";
+    display: block;
+    margin: 10px 80px 0;
+    color: #2DEEEE;
+    font-size: 150%;
+}
+
+.container{
+    position: relative;
+}
+.reach-out-section a:link ,.reach-out-section a:visited {
+    display: block;
+    opacity: .7;
+    transition: opacity .2s, transform .2s;
+}
+.reach-out-section a:hover, .reach-out-section a:active{
+    display: block;
+    opacity: 1;
+    transform: scale(1.5);
+}
+
+.reach-out-section .facebook-icon{
+    position: absolute;
+    color: #3b5998;
+    font-size: 180%;
+    right: 170px;
+    top: 20px;
+}
+.reach-out-section .facebook{
+    position: absolute;
+    color: #3b5998;
+    font-size: 170%;
+    left : 170px;
+    top: 120px;
+}
+.reach-out-section .twitter-icon{
+    position: absolute;
+    color: #1da1f2;
+    font-size: 300%;
+    text-align: center;
+    top: 170px;
+    left: 230px;
+}
+.reach-out-section .twitter{
+    position: absolute;
+    color: #1da1f2;
+    font-size: 300%;
+    text-align: center;
+    top: 80px;
+    right: 70px;
+}
+.reach-out-section .github-icon{
+    position: absolute;
+    color: #333;
+    font-size: 250%;
+    top: 170px;
+    right: 140px;
+}
+.reach-out-section .github{
+    position: absolute;
+    color: #333;
+    font-size: 250%;
+    right: 240px;
+    top: 45px;
+}
+/* footer */
+
+footer{
+    background-color: #B0C5C5;
+}
+
+footer p{
+    margin: 15px;
+    padding: 0;
+}
+
+footer a:link, footer a:visited{
+    font-size: 120%;
+    display: inline-block;
+    margin: 15px 15px 0 0;
+    color: #5E5E5E;
+    transition: color .2s;
+
+}
+
+footer a:hover, footer a:active{
+    color: #2DEEEE;
+}
+
+footer .social{
+    float: right;
 }
